@@ -136,6 +136,15 @@ header {
 	left: 10px;
 }
 
+..documents h3, 
+.photos h3 {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.documents span, 
+.photos span {
+	color: #605f5f;
+}
 
 .sections {
 	background-color: #308355;
@@ -210,6 +219,8 @@ header {
 	top: 20px;
 	box-shadow:0px 0px 11px 0px rgba(255, 255, 255, 0.24);
 	text-shadow: 1px 1px 6px rgba(234, 234, 234, 1);
+	font-family: 'Hind', sans-serif;
+	font-size: 25px;
 }
 
 .form {
@@ -230,7 +241,7 @@ header {
 	height: 38px;
 	border: 2px solid #c4c4c4;
 	position: relative;
-	top: 75px;
+	top: 70px;
 	left: 80px;
 	margin-bottom: 15px;
 	padding-left: 20px;
@@ -241,7 +252,7 @@ header {
 	height: 100px;
 	border: 2px solid #c4c4c4;
 	position: relative;
-	top: 76px;
+	top: 70px;
 	left: 80px;
 	padding-left: 20px;
 	padding-bottom: 40px;
