@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 600px;
+	background-image: url(img/banner.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.logo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: black;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 50px;
+	margin: auto;
+}
+
+.logo p {
+	padding-top: 25%;
+	font-family: 'Great Vibes', cursive;
+	font-size: 70px;
+}
+
+.callTo {
+	width: 350px;
+	height: 310px;
+	margin: auto;
+	background-color: white;
+	border: 2px solid #c4c4c4;
+	border-radius: 5px;
+	position: relative;
+	top: 150px;
+}
+.callTo input[type=text] {
+	width: 250px;
+	height: 35px;
+	position: relative;
+	left: 55px;
+	top: 18px;
+	border: 1px solid #c4c4c4;
+	padding-left: 20px;
+	border-radius: 5px;
+}
+
+.callTo img {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	top: 40px;
+}
+
+.callTo p {
+	width: 250px;
+	color: #938e8e;
+	position: relative;
+	top: 60px;
+	left: 50px;
+	font-size: 16px;
+	text-align: center;
+	
+	
+}
+
+.callTo button {
+	width: 200px;
+	height: 45px;
+	border: none;
+	background-color: #227dd3;
+	color: white;
+	position: relative;
+	top: 60px;
+	left: 75px;
+}
+
+.text {
+	width: 45%;
+	height: 100px;
+	position: relative;
+	top: 90px;
+	margin: auto;
+	color: white;
+	font-size: 35px;
+}
+
+.text p:first-child {
+	font-family: 'Syncopate', sans-serif;
+	font-weight: 600;
+}
+
+.text p:last-child {
+	font-family: 'Secular One', sans-serif;
+	font-weight: 600;
+	position: relative;
+	left: 150px;
+}
+
+.boxes {
+	width: 100%;
+	height: 400px;
+	background-color: #ffffff;
+}
+
+.documents,
+.photos {
+	width: 30%;
+	height: 120px;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	position: relative;
+	left: 15%;
+	top: 200px;
+	margin-left: 60px;
+}
+
+.documents img, 
+.photos img {
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+.documents span, 
+.photos span, 
+.documents h3, 
+.photos h3  {
+	position: relative;
+	left: 10px;
+}
+
+
+.sections {
+	background-color: #308355;
+	height: 1300px;
+	color: white;
+}
+.sec1 {
+	clip-path: polygon(0 0, 100% 0%, 100% 66%, 0% 100%);
+	width: 100%;
+	height: 800px;
+	background-color: #5fc18b;
+}
+
+.sec2 {
+	width: 100%;
+	height: 850px;
+	background-color: #44a36f;
+	position: relative;
+	top: -330px;
+	clip-path: polygon(0 39%, 100% 10%, 100% 100%, 0% 100%);
+}
+.sec1 h1, .sec2 h1 {
+	text-align: center;
+	z-index: 1000;
+}
+
+.sec2 img {
+	position: relative;
+	top: 300px;
+	left: 5%;
+}
+
+.sec1 img {
+	position: relative;
+	top: 50px;
+	left: 17%;
+}
+
+.sec1_text {
+	width: 50%;
+	height: 300px;
+	position: relative;
+	top: -270px;
+	left: 23%;
+	
+}
+
+.sec2_text {
+	width: 35%;
+	height: 300px;
+	position: relative;
+	left: 42%;
+	top: -150px;
+}
+
+.contact {
+	width: 100%;
+	height: 600px;
+	background-image: url(img/contact.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.sec2_text button {
+	width: 200px;
+	height: 40px;
+	border-radius: 8px;
+	background-color: #44a36f;
+	border: 3px solid white;
+	position: relative;
+	top: 20px;
+	box-shadow:0px 0px 11px 0px rgba(255, 255, 255, 0.24);
+	text-shadow: 1px 1px 6px rgba(234, 234, 234, 1);
+}
+
+.form {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	background: white;
+	opacity: 0.8;
+	border: 2px solid #c4c4c4;
+	margin: auto;
+	position: relative;
+	top: 120px;
+}
+
+.form input[type=text],
+.form input[type=email] {
+	width: 250px;
+	height: 38px;
+	border: 2px solid #c4c4c4;
+	position: relative;
+	top: 75px;
+	left: 80px;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+
+.form input[type=textarea] {
+	width: 250px;
+	height: 100px;
+	border: 2px solid #c4c4c4;
+	position: relative;
+	top: 76px;
+	left: 80px;
+	padding-left: 20px;
+	padding-bottom: 40px;
+}
+
+.form input[type=button]{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #409968;
+	background-image: url(img/but.jpg);
+	background-size: cover;
+	background-size: ;
+	opacity: 1;
+	position: relative;
+	left: 42%;
+	top: 85px;
+	
+}
+
+footer {
+	height: 50px;
+	background-color: #43a06d;
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
+
+
+
+			
