@@ -91,6 +91,7 @@ header {
 }
 
 .text p:first-child {
+	width:400px;
 	font-family: 'Syncopate', sans-serif;
 	font-weight: 600;
 }
