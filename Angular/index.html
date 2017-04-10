@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl as my">
+    <div class="jumbotron text-center {{my.useStyle.header}}">
+        <h1>My Angular page</h1>
+        <p>You can change style:</p>
+        <button class="btn btn-primary btn-md" ng-click="my.setStyle1()">Style 1</button>
+        <button class="btn btn-primary btn-md" ng-click="my.setStyle2()">Style 2</button>
+        <button class="btn btn-primary btn-md" ng-click="my.setStyle3()">Style 3</button>
+    </div>
+    <div class="container-rfuid">
+        <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 {{my.useStyle.aside}}">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 {{my.useStyle.section}}">
+                    <h3>Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 {{my.useStyle.aside}}">
+                    <h3>Column 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+        </div>
+    </div>
+    <div class="container-rfuid ">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 {{my.useStyle.footer}}"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header--1{
+    background-color: brown;
+    color: cadetblue;
+    margin-bottom: 0;
+}
+.header--1 button{
+    background-color: burlywood; 
+}
+
+.aside--1{
+    
+    background-color: chocolate;
+    height: 500px;
+}
+.section--1{
+    background-color: bisque;
+    height: 500px;
+}
+.footer--1{
+    background-color: darkgoldenrod;
+    height: 100px;
+}
+
+
+
+
+
+
+.header--2{
+    background-color: cornflowerblue;
+    color: blue;
+    margin-bottom: 0;
+}
+.header--2 button{
+    background-color: cadetblue; 
+}
+
+.aside--2{
+    
+    background-color: darkcyan;
+    height: 500px;
+}
+.section--2{
+    background-color: dodgerblue;
+    height: 500px;
+}
+.footer--2{
+    background-color: aqua;
+    height: 100px;
+}
+
+
+
+
+
+
+.header--3{
+    background-color: aquamarine;
+    color: blueviolet;
+    margin-bottom: 0;
+}
+.header--3 button{
+    background-color: aqua; 
+}
+
+.aside--3{
+    
+    background-color: deepskyblue;
+    height: 500px;
+}
+.section--3{
+    background-color: aliceblue;
+    height: 500px;
+}
+.footer--3{
+    background-color: darkturquoise;
+    height: 100px;
+}
