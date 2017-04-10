@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        body{
+            background-size: cover;
+            background-image: url(img/498018600.jpg);
+        }
+        p{
+            color: white;
+            width: 900px;
+            margin-left: 100px;
+            font-size: 50px;
+            font-weight: 600;
+            margin-top: 150px;
+            font-style: oblique;
+        }
+        span{
+           color: white;
+            width: 800px;
+             font-size: 55px;
+            font-weight: 600;
+            margin-left: 200px;
+            font-style: italic;
+            margin-top: 250px;
+        }</style>
+</head>
+<body   onload="count()">
+    <span>До Нового Року залишилось:</span>
+    <p id="smth"></p>
+    
+    <script>
+   var timeend= new Date();
+var timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
+
+function count() {
+  var day = new Date();
+    var day = Math.floor((timeend-day)/1000);
+   var sec=day%60; day=Math.floor(day/60); if(sec<10)sec='0'+sec;
+   var min=day%60; day=Math.floor(day/60); if(min<10)min='0'+min;
+    var hour=day%24; day=Math.floor(day/24);
+ document.getElementById('smth').innerHTML=day +" днів "+ hour+" годин "+min+" хвилин "+sec+" секунд";;
+    window.setTimeout("count()",1000);
+}
+    </script>
+</body>
+</html>
