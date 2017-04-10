@@ -1,0 +1,58 @@
+#game_map{
+    margin-left: 500px;
+	border: 5px solid #c2def4;
+	clear: both;
+	float: left;
+     background: #f3f9f9;
+}
+#game_map .cell{
+    margin: auto;
+	cursor: pointer;
+	float: left;
+	border: 5px solid #c2def4;
+	width: 100px;
+	height: 100px;
+	line-height: 80px;
+	font-size: 40px;
+	text-align: center;
+}
+.clear{
+	clear: both;
+	line-height: 0px;
+}
+#game_map .player1_cell{
+	color: #cc0000;
+}
+#game_map .player2_cell{
+	color: #0000cc;
+}
+#game_map .hover{
+	background: #DFE1E3;
+}
+#game_map .win{
+	background: #D3E7DC;
+}
+#player_mark, #player_name{
+	padding: 0px 3px;
+}
+.end_game{
+	display: none;
+margin-left: 100px;
+}
+#winner_name{
+	text-decoration: underline;
+}
+table{
+	clear: both;
+    border: 1px solid black;
+    margin-left: 550px;
+    margin-bottom: 50px;
+}
+td{
+	text-align: center;
+    border: 1px solid black;
+    color: blue;
+    font-size: 26px;
+}
+h3{
+margin-left: 550px}
