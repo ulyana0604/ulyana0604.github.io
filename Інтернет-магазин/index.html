@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    
+    
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl as my" class="wrapper">
+       <header>
+            <div class="logo-rozetka"></div>
+            <div class="contact-number">
+              <div>
+              <img src="img/telephone.png" alt="">
+              <b>(093) 03 30 848, </b>
+              (097) 76 54 887, (055) 34 99 100
+              <ul>
+                  <li>Вопросы и ответы</li>
+                  <li>Доставка и оплата</li>
+                  <li>Гарантия</li>
+                  <li>Контакты</li>
+                  <li>Продавать на Розетке</li>
+                  <li><img src="img/map.png" alt="">Отследить заказ</li>
+                  
+              </ul>
+              </div>
+            </div>
+            <div id="custom-search-input">
+              <div class="input-group col-md-12">
+                <input type="text" class="form-control input-lg" placeholder="Search..." />
+                <span class="input-group-btn">
+                  <button class="btn btn-info btn-lg" type="button">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="hello">
+              <div>Здравствуйте,</div>
+              <a href=""><img src="img/user.png" alt=""> войдите в личный кабинет</a>
+            </div>
+            <div class="info">
+              <div>
+                <img src="img/sravnenua.png" alt="">
+                <p>Сравнение</p>
+              </div>
+              <div>
+                <img src="img/want.png" alt="">
+                <p>Желания</p>
+              </div>
+              <div>
+                <img src="img/korzina.png" alt="">
+                <p>Корзина</p>
+              </div>
+            </div>
+       </header>
+       <div class="content">
+          <div class="menu-div">
+             <button type="button" class="btn btn-success">Каталог товаров</button>
+             <div class="menu" id="menu">
+                 <ul>
+                     <li>Ноутбуки и компютеры <p>►</p></li>
+                     <li>Смартфоны, ТВ и электроника <p>►</p></li>
+                     <li>Бытовая техника <p>►</p></li>
+                     <li>Товары для дома <p>►</p></li>
+                     <li>Инструменты и автотовары <p>►</p></li>
+                     <li>Дача, сад и огород <p>►</p></li>
+                     <li>Спорт и увлечения <p>►</p></li>
+                     <li>Одежда, обувь и украшения <p>►</p></li>
+                     <li>Красота и здоровье <p>►</p></li>
+                     <li>Канцтовары и книги <p>►</p></li>
+                 </ul>
+             </div>
+              
+          </div>
+          <div class="order">
+              <ul id="a6" >
+                  <li ng-repeat="computers in my.computers | filter: my.filter6" >
+                  <img src="{{computers.photo}}" alt=""><br>
+                  <h4>{{computers.name}}</h4>
+                  <p>{{computers.brand}}</p>
+                  <p>{{computers.processor}}</p>
+                  <p>{{computers.accessMemory}}</p>
+                  <p>{{computers.color}}</p>
+                  <p>{{computers.price}}</p>
+                  
+                  </li>
+                
+                  
+              </ul>
+              <ul id='a7'>
+              	<li ng-repeat="phones in my.phones | filter: my.filter7">
+              		<img src="{{phones.photo}}" alt=""><br>
+                  <h4>{{phones.name}}</h4>
+                  <p>{{phones.brand}}</p>
+                  <p>{{phones.processor}}</p>
+                  <p>{{phones.accessMemory}}</p>
+                  <p>{{phones.color}}</p>
+                  <p>{{phones.price}}</p>
+              	</li>
+              </ul>
+               <ul id='a8' >
+                  <li ng-repeat="technique in my.technique | filter: my.filter8" >
+                  <img src="{{technique.photo}}" alt=""><br>
+                  <h4>{{technique.name}}</h4>
+                  <p>{{technique.type}}</p>
+                  <p>{{technique.price}}</p>
+                  
+                  </li>
+                
+                  
+              </ul>
+              <ul id='a9' >
+                  <li ng-repeat="forHome in my.forHome | filter: my.filter9" >
+                  <img src="{{forHome.photo}}" alt=""><br>
+                  <h4>{{forHome.name}}</h4>
+                  <p>{{forHome.type}}</p>
+                  <p>{{forHome.price}}</p>
+                  
+                  </li>
+                
+                  
+              </ul>
+              <ul id='a10' >
+                  <li ng-repeat="avto in my.avto | filter: my.filter10" >
+                  <img src="{{avto.photo}}" alt=""><br>
+                  <h4>{{avto.name}}</h4>
+                  <p>{{avto.type}}</p>
+                  <p>{{avto.price}}</p>
+                  
+                  </li>
+                
+                  
+              </ul>
+              <ul id='a11' >
+                  <li ng-repeat="cottage in my.cottage | filter: my.filter11" >
+                  <img src="{{cottage.photo}}" alt=""><br>
+                  <h4>{{cottage.name}}</h4>
+                  <p>{{cottage.type}}</p>
+                  <p>{{cottage.price}}</p>
+                  
+                  </li>
+                
+                  
+              </ul>
+              <ul id='a12' >
+                  <li ng-repeat="sport in my.sport | filter: my.filter12" >
+                  <img src="{{sport.photo}}" alt=""><br>
+                  <h4>{{sport.name}}</h4>
+                  <p>{{sport.type}}</p>
+                  <p>{{sport.price}}</p>
+                  </li>
+              </ul>
+               <ul id='a13' >
+                  <li ng-repeat="clothes in my.clothes | filter: my.filter13" >
+                  <img src="{{clothes.photo}}" alt=""><br>
+                  <h4>{{clothes.name}}</h4>
+                  <p>{{clothes.type}}</p>
+                  <p>{{clothes.price}}</p>
+                  </li>
+              </ul>
+               <ul id='a14' >
+                  <li ng-repeat="beauty in my.beauty | filter: my.filter14" >
+                  <img src="{{beauty.photo}}" alt=""><br>
+                  <h4>{{beauty.name}}</h4>
+                  <p>{{beauty.type}}</p>
+                  <p>{{beauty.price}}</p>
+                  </li>
+              </ul>
+               <ul id='a15' >
+                  <li ng-repeat="books in my.books | filter: my.filter15" >
+                  <img src="{{books.photo}}" alt=""><br>
+                  <h4>{{books.name}}</h4>
+                  <p>{{books.type}}</p>
+                  <p>{{books.price}}</p>
+                  </li>
+              </ul>
+          </div>
+          <div class="search">
+             <span id="searchComputers">
+              <div class="search-mark">
+                 <label>Выберите бренд:   <br>
+                  <label for="">Acer <input type="checkbox"  ng-model="my.brand.acer" ng-true-value="'Acer'" ng-false-value="''" ng-click="my.changeBrand('aser')"></label>
+                  <label for="">Dell <input type="checkbox"  ng-model="my.brand.dell" ng-true-value="'Dell'" ng-false-value="''" ng-click="my.changeBrand('dell')"></label>
+                  <label for="">Asus <input type="checkbox"  ng-model="my.brand.asus" ng-true-value="'Asus'" ng-false-value="''" ng-click="my.changeBrand('asus')"></label>
+                  <label for="">Apple <input type="checkbox"  ng-model="my.brand.apple" ng-true-value="'Apple'" ng-false-value="''" ng-click="my.changeBrand('apple')"></label>
+                  <label for="">Lenovo <input type="checkbox"  ng-model="my.brand.lenovo" ng-true-value="'Lenovo'" ng-false-value="''" ng-click="my.changeBrand('lenovo')"></label>
+                  <label for="">HP <input type="checkbox"  ng-model="my.brand.hp" ng-true-value="'HP'" ng-false-value="''" ng-click="my.changeBrand('hp')"></label></label>
+              </div>
+              <div class="search-color">
+                 <label for="">Выберите цвет: <br><p></p>
+                  <select ng-model="my.color">
+                      <option value="Черный">Черный</option>
+                      <option value="Cеребристый">Cеребристый</option>
+                      <option value="Cерый">Cерый</option>
+                      <option value="Белый">Белый</option>
+                  </select></label>
+              </div>
+              <div class="search-price">
+                <label for="">Цена:</label> <input type="number" ng-model="my.priceFrom">
+                 <label for=""> to </label><input type="number" ng-model="my.priceTo">  
+              </div>
+              <div class="search-memory">
+                <label for="">Объем оперативной памяти:
+                 <select ng-model="my.accessMemory">
+                      <option value="2 ГБ">2 ГБ</option>
+                      <option value="4 ГБ">4 ГБ</option>
+                      <option value="6 ГБ">6 ГБ</option>
+                      <option value="8 ГБ">8 ГБ</option>
+                      <option value="16 ГБ">16 ГБ</option>
+                 </select> </label>
+              </div>
+              <div class="search-processor">
+                 <label for="">Процессор: 
+                  <select >
+                      <option value="Intel Celeron N3060">Intel Celeron N3060</option>
+                      <option value="Intel Celeron 3855U"> Intel Celeron 3855U</option>
+                      <option value="Intel Pentium J3710">Intel Pentium J3710</option>
+                      <option value="Intel Core i5">Intel Core i5</option>
+                      <option value="Intel Core i5-6400T">Intel Core i5-6400T</option>
+                  </select></label>
+              </div>
+             </span>
+             <span id="searchPhones">
+              <div class="search-mark">
+                 <label>Выберите бренд:   <br>
+                  <label for="">Samsung <input type="checkbox"  ng-model="my.brand.acer" ng-true-value="'Acer'" ng-false-value="''" ng-click="my.changeBrand('aser')"></label>
+                  <label for="">iPhone <input type="checkbox"  ng-model="my.brand.dell" ng-true-value="'Dell'" ng-false-value="''" ng-click="my.changeBrand('dell')"></label>
+                  <label for="">A <input type="checkbox"  ng-model="my.brand.asus" ng-true-value="'Asus'" ng-false-value="''" ng-click="my.changeBrand('asus')"></label>
+                  <label for="">Apple <input type="checkbox"  ng-model="my.brand.apple" ng-true-value="'Apple'" ng-false-value="''" ng-click="my.changeBrand('apple')"></label>
+                  </label>
+              </div>
+              <div class="search-color">
+                 <label for="">Выберите цвет: <br><p></p>
+                  <select ng-model="my.color">
+                      <option value="Черный">Черный</option>
+                      <option value="Cеребристый">Cеребристый</option>
+                      <option value="Cерый">Cерый</option>
+                      <option value="Белый">Белый</option>
+                  </select></label>
+              </div>
+              <div class="search-price">
+                <label for="">Цена:</label> <input type="number" ng-model="my.priceFrom">
+                 <label for=""> to </label><input type="number" ng-model="my.priceTo">  
+              </div>
+              <div class="search-memory">
+                <label for="">Объем оперативной памяти:
+                 <select ng-model="my.accessMemory">
+                      <option value="2 ГБ">2 ГБ</option>
+                      <option value="4 ГБ">4 ГБ</option>
+                      <option value="6 ГБ">6 ГБ</option>
+                      <option value="8 ГБ">8 ГБ</option>
+                      <option value="16 ГБ">16 ГБ</option>
+                 </select> </label>
+              </div>
+              <div class="search-processor">
+                 <label for="">Процессор: 
+                  <select >
+                      <option value="Intel Celeron N3060">Intel Celeron N3060</option>
+                      <option value="Intel Celeron 3855U"> Intel Celeron 3855U</option>
+                      <option value="Intel Pentium J3710">Intel Pentium J3710</option>
+                      <option value="Intel Core i5">Intel Core i5</option>
+                      <option value="Intel Core i5-6400T">Intel Core i5-6400T</option>
+                  </select></label>
+                   <input type="button" ng-click="my.show()">
+                  
+              </div>
+             </span>
+          </div>
+           
+       </div>
+       
+       
+       
+       
+       
+    </div>
+    
+    
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
