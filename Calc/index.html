@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="calculator">
+        <form action="">
+            <input type="text" id="calculator_input_introduction" name="display"><br><br>
+            <input type="button" class="calculator_input_doings" value="+" style="margin-left:50px" onClick="addChar(this.form.display, '+')">
+             <input type="button" class="calculator_input_doings" value="-" id="calculator_button_" onClick="addChar(this.form.display, '-')">
+              <input type="button" class="calculator_input_doings" value="∗" id="calculator_button_" onClick="addChar(this.form.display, '*')">
+               <input type="button" class="calculator_input_doings" value="÷" id="calculator_button_" onClick="addChar(this.form.display, '/')"><br><br>
+            
+            <input type="button" class="calculator_input_doings" value="cos" style="margin-left:50px" onClick="if (checkNum(this.form.display.value)) { cos(this.form) }">
+             <input type="button" class="calculator_input_doings" value="sin" onClick="if (checkNum(this.form.display.value)) { sin(this.form)}">
+              <input type="button" class="calculator_input_doings" value="tg"  onClick="if (checkNum(this.form.display.value)) { tan(this.form) }">
+               <input type="button" class="calculator_input_doings" value="ln"  onClick="if (checkNum(this.form.display.value)) { 
+ln(this.form) }"><br><br>
+               
+                <input type="button" class="calculator_input_doings" value="7" style="margin-left:50px" onClick="addChar(this.form.display, '7')">
+             <input type="button" class="calculator_input_doings" value="8" onClick="addChar(this.form.display, '8')">
+              <input type="button" class="calculator_input_doings" value="9" onClick="addChar(this.form.display, '9')">
+               <input type="button" class="calculator_input_doings" value="√" onClick="if (checkNum(this.form.display.value)) {
+sqrt(this.form) }"><br><br>
+               
+                <input type="button" class="calculator_input_doings" value="4" style="margin-left:50px" onClick="addChar(this.form.display, '4')">
+             <input type="button" class="calculator_input_doings" value="5" onClick="addChar(this.form.display, '5')">
+              <input type="button" class="calculator_input_doings" value="6" onClick="addChar(this.form.display, '6')">
+               <input type="button" class="calculator_input_doings" value="^" onClick="if (checkNum(this.form.display.value)) { 
+square(this.form) }"><br><br>
+               
+               <input type="button" class="calculator_input_doings" value="1" style="margin-left:50px" onClick="addChar(this.form.display, '1')">
+             <input type="button" class="calculator_input_doings" value="2" onClick="addChar(this.form.display, '2')">
+              <input type="button" class="calculator_input_doings" value="3" onClick="addChar(this.form.display, '3')">
+              <input type="button" class="calculator_input_doings" value="=" name="enter" onClick="if (checkNum(this.form.display.value)) { 
+compute(this.form) }"><br><br>
+              
+              <input type="button" class="calculator_input_doings" value="0" style="margin-left:50px" id="calculator_button_null" onClick="addChar(this.form.display, '0')" >
+             <input type="button" class="calculator_input_doings" value="." onClick="addChar(this.form.display, '.')">
+              <input type="button" class="calculator_input_doings" value="C" onClick="this.form.display.value = 0 ">
+             
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
