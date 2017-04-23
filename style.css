@@ -3,10 +3,9 @@ body {
 }
 
 #box1 {
-	display: none;
+  display: none;
   margin: auto;
-  
-  width: 556px;
+  width: 52%;
   
 }
 
@@ -20,7 +19,7 @@ body {
 	
   display: inline-block;
 	
-  width: 100px;
+  width: 100%;
   height: 100px;
   border: solid 2px #d68975;
   margin: 5px;
