@@ -13,7 +13,7 @@ function play5x5() {
   go: function(move) {
     var index = this.hole + move;
     if (!this.order[index]) return false;
-    if (move == fiveXfive.Move.left || move == fifteen.Move.right)
+    if (move == fiveXfive.Move.left || move == fiveXfive.Move.right)
       if (Math.floor(this.hole/5) !== Math.floor(index/5)) return false;
     this.swap(index, this.hole);
     this.hole = index;
@@ -37,20 +37,22 @@ function draw() {
 	
 				   }
 
-function play6x6() {
+
+
+function play6x6() { 
 	document.getElementById('box1').style.display = "none";
 	document.getElementById('box2').style.display = "block";
-	document.getElementById('box1').innerHTML="";
 	document.getElementById('box2').innerHTML="";
+	document.getElementById('box1').innerHTML="";
 	var sixXsix = {
   Move: {up: -6, left: -1, down: 6, right: 1},
-  order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35].sort(function() { return Math.random()-.6; }).concat(0),
+  order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35].sort(function() { return Math.random()-.5; }).concat(0),
   hole: 35,
   isCompleted: function() { return !this.order.some(function(item, i) { return item > 0 && item-1 !== i; }); },
   go: function(move) {
     var index = this.hole + move;
     if (!this.order[index]) return false;
-    if (move == sixXsix.Move.left || move == sixXsix.Move.right);
+    if (move == sixXsix.Move.left || move == sixXsix.Move.right)
       if (Math.floor(this.hole/6) !== Math.floor(index/6)) return false;
     this.swap(index, this.hole);
     this.hole = index;
@@ -72,7 +74,7 @@ function draw() {
   for (var i = 0, tile; tile = bbox.childNodes[i], i < 36; i++) {
     tile.textContent = sixXsix.order[i]; tile.style.visibility = sixXsix.order[i]? 'visible' : 'hidden'; } };
 	
-}
+				   }
 
 function roulsDiv() {
    document.getElementById('roulsText').style.display= "block";
