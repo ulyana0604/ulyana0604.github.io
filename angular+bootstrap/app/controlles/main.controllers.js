@@ -1,6 +1,6 @@
 angular.module('Controllers', ['Services'])
     .controller('mainCtrl', mainCtrl)
-mainCtrl.$inject = ['mainService'];
+
 
 
 function mainCtrl (mainService){

@@ -4,72 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Droid+Sans|Great+Vibes|Hind|Secular+One|Syncopate" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One|Timmana" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<p>Wg.</p>
-		</div>
-		<div class="text">
-			<p>Be sure you put your feet</p>
-			<p>IN THE RIGHT PLACE</p>
-		</div>
-		<div class="callTo">
-			<form action="">
-				<input type="text" placeholder="Enter your zip code">
-			</form>
-    		<img src="img/country.jpg" alt="">
-    		<p>This is Photoshop's version  of Lorem Ipsum. </p>
-    		<button>Press me</button>
+  <p>Ну що, пограєм у Пятнашки?</p>
+  <p>Вибирай розмір ігрового поля і вперед до перемоги!</p>
+	<div>
+	 <form>
+		<input type="button" value="5x5" onclick="play5x5()">
+		<input type="button" value="6x6" onclick="play6x6()">
+	 </form>
+	
+	</div>
+	<div class="rouls">
+	    <p>Не знаєш правил? Не біда) <a href="# "onclick="roulsDiv()" >Правила читай тут</a></p>
+	    <div id="roulsText">
+	  <span>Популярна головоломка <i>"пятнашка"</i> була придумана ще в кінці 19 століття. Класичне ігрове поле являє собою матрицю 4х4(у нашому випадку це матриця 5х5 та 6х6) клітин, на якому по порядку (зліва - направо і зверху - вниз) розташовуються цифри від 1 до 15(24,35). Остання клітина - порожня. Клітини перемішуються певним чином, і завдання гравця полягає в тому, щоб відновити їх первинний правильне розташування від 1 до 15(24,35). Робити це можна лише шляхом переміщення на порожню клітину іншої, сусідньої з нею клітини (розташованої ліворуч, праворуч, зверху чи знизу від порожньої).Використовуй ↑, ↓, ←, → на клавіатурі.</span>
+	   <form action="">
+	       <input type="button" value="Сховати" onclick="hide()">
+	   </form>
 	    </div>
-	</header>
-	
-	<div class="boxes">
-		<div class="documents">
-			<img src="img/document.png" alt="">
-			<h3>Documents</h3>
-			<span>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</span>
-		</div>
-		<div class="photos">
-			<img src="img/photo.png" alt=""  >
-			<h3>Photos</h3>
-			<span>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</span>
-		</div>
 	</div>
-	<div class="sections">
-		<div class="sec1">
-			<img src="img/sec1.png" alt="">
-			<div class="sec1_text">
-			<h1>This is a Heading</h1><br>
-			<span>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. <br><br><br>
-			Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</span>
-		</div>
-		</div>
-		<div class="sec2">
-			<img src="img/sec2.png" alt="">
-			<div class="sec2_text">
-			<h1>This is a Heading</h1>
-			<span>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc5 Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</span><br>
-			<button>Download</button>
-		</div>
-		</div>
-	</div>
-	<div class="contact">
-		<div class="form">
-			<form action="">
-				<input type="text" placeholder="Name"><br>
-				<input type="email" placeholder="email addresa" ><br>
-				<input type="textarea" placeholder="Message"><br>
-				<input type="button">
-			</form>
-		</div>
-	</div>
-	<footer>
-		<span>© Copyright 2013 Css Author, All Rights Reserved.</span>
-	</footer>
-	
-
+	<div id="box1"></div>
+    <div id="box2"></div>
+     
+	<script src="main.js"></script>
 </body>
 </html>

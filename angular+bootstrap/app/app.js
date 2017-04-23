@@ -1,1 +1,1 @@
-angular.module('taskList', ['Services', 'Controllers'])
+angular.module('AlbumsList', ['Services', 'Controllers'])
