@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 50%;
+	margin: auto;
+	height: 600px;
+	position: relative;
+	top: 20px;
+}
+tr{
+	border: 5px solid black;
+	border-collapse: collapse;
+	
+	
+}
+
+td {
+	border: 5px solid black;
+	border-collapse: collapse;
+}

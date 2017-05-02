@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        
+        //завдання 1
+    function pow(a, n) {
+     var b = a;
+        for (var i = 1; i < n; i++) {
+        b *= a;
+    }
+    return b;
+}
+var numb = parseInt(prompt('Введіть число'));
+var numbPow =  parseInt(prompt('Введіть степінь'));
+        
+console.log(pow(numb, numbPow));
+        
+        //------------------------------------------------------------------------------------------
+        
+        //завдання 2
+
+        var arrNames = [];
+        for (var i = 0; i < 5; i++){
+            arrNames[i]= prompt('Введіть ім`я  для масиву');
+        }
+        console.log(arrNames);
+        
+var name = prompt("'Введіть ім`я"),
+    q= 0;
+while (q < arrNames.length) {
+  if (name == arrNames[i]) {
+    alert("Ошибка");
+  } else if(name !== arrNames[i] && q === (arrNames.length-1)){
+    alert( name + " вы успешно вошли! ");
+
+  }
+  q++;
+}
+</script>
+</body>
+</html>

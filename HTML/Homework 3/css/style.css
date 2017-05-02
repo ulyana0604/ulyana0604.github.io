@@ -1,0 +1,115 @@
+* {
+   margin: 0;
+   padding: 0;    
+}
+
+body {
+    height: 900px;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-size:100% 100%;
+	background-repeat: no-repeat;
+    
+    
+}
+
+.wrapper {
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    position: relative;
+}
+
+header {
+	width: 900px;
+	height: 150px;
+	margin: auto;
+}
+.contries {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    position: relative;  
+	
+}
+
+.contries div{
+    width: 30%;
+    height: 200px;
+	background-repeat: no-repeat;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 25px;    
+	border: 4.5px solid gray;
+	border-radius: 3%;
+}
+
+.contries img {
+    width: 100%;
+    height: 100%;
+}
+
+.contries p{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
+.contacts {
+    color: #ffffff;
+	float: right;
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+	position: relative;
+	top: 100px;
+	right: 10px;
+	
+}
+
+.contacts p {
+   position: relative;
+}
+
+.logo {
+    position: relative;
+	float: left;  
+}
+
+
+.palm {
+	height: 150px;
+	width: 130px;
+	position: relative;
+	float:left;
+	top: 30px;
+	left: 200px;
+	opacity: 0.6;
+}
+
+.asia {
+   height: 50px;
+	width: 200px;
+	position: relative;
+	top: 100px;
+	right: 50px;
+}
+
+.logo p {
+    width: 100%;
+    color: white;
+	position: relative;
+	top: 100px;
+	right: 20px;
+   
+}
+
+.copyright {
+    margin-top: 100px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 12p.5x;
+}

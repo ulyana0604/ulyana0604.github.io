@@ -1,0 +1,26 @@
+h3 {
+    text-align: center;
+}
+
+ul {
+    list-style: square;
+    
+}
+
+div {
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+input[type=button] {
+    background-color: lightblue;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    
+}

@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+header {
+	width: 100%;
+	height: 40px;
+	background-color: #085292;
+	padding-left: 40%;
+	font-size: 13.5px;
+	font-family: 'Roboto', sans-serif;
+}
+
+header p {
+	padding-top: 10px;
+	margin-left: 5px;
+	color: #5aaee6;
+	float: left;
+}
+
+.enter{
+	position: relative;
+	left: 10px;
+}
+
+.menu p {
+	height: 30px;
+	width: 90px;
+	text-align: center;
+}
+
+.enter a {
+	width: 160px;
+	color: white;
+}
+
+.enter p {
+	margin-left: 10px;
+	height: 30px;
+	
+}
+
+.vender, .ola {
+	background-color: #307dc6;
+	color: white;
+}
+
+.content {
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.container {
+	width: 450px;
+	height: 440px;
+	margin: auto;
+	position: relative;
+	top: 100px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12.5px;
+	
+}
+
+.cadastre {
+	width: 100%;
+	height: 15%;
+	text-align: center;
+	background-color: rgba(78, 74, 74, 0.8);
+ 	font-family: 'Roboto', sans-serif;
+}
+
+.cadastre h1 {
+	position: relative;
+	top: 20%;
+	color: white;
+}
+
+.data {
+	width: 100%;
+	height: 84%;
+	position: relative;
+	top: 1%;
+	background-color: rgba(78, 74, 74, 0.8);
+}
+
+input[type=text], 
+input[type=password], 
+input[type=email] {
+	width: 50%;
+	height: 25px;
+	position: relative;
+	left: 20%;
+	background-color: #101010;
+	border: none;
+	margin-top: 8px;
+	color: white;
+	top: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+input[type=text]:hover { 
+    background-color: #1b5288;
+	color: white;
+	box-shadow: 1px 1px 4px 2px #5aaee6;
+}
+
+input[type=password]:hover { 
+    background-color: #1b5288;
+	color: white;
+	box-shadow: 1px 1px 4px 2px #5aaee6;
+}
+
+input[type=email]:hover { 
+    background-color: #1b5288;
+	color: white;
+	box-shadow: 1px 1px 4px 2px #5aaee6;
+}
+
+input[type=checkbox],
+label {
+	position: relative;
+	left: 20%;
+	top:30px;
+	color: white;
+}
+
+input[type=button] {
+	width: 27%;
+	height: 30px;
+	position: relative;
+	top: 50px;
+	left: 35%;
+	background-color: #4aa5d7;
+	border:none;
+	border-radius: 4px;
+	color: white;
+}
+
+.container p {
+	width: 80%;
+	position: relative;
+	top: 65px;
+	left: 8%;
+	text-align: center;
+	color: white;
+}
+
+button {
+	background-color: #3c5595;
+	width: 50%;
+	height: 30px;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	position: relative;
+	top: 10px;
+	left: 23%;
+	color: white;
+}
+
+hr {
+	width: 85%;
+	margin: auto;
+	margin-top: 20px;
+}
