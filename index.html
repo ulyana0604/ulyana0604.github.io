@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Пятнашки</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One|Timmana" rel="stylesheet">
+</head>
+<body>
+  <p>Ну що, пограєм у Пятнашки?</p>
+  <p>Вибирай розмір ігрового поля і вперед до перемоги!</p>
+  <div>
+    <form>
+      <input type="button" value="5x5" onclick="play5x5()">
+      <input type="button" value="6x6" onclick="play6x6()">
+    </form>
+  </div>
+  <div class="rouls">
+    <p>Не знаєш правил? Не біда) <a href="# "onclick="roulsDiv()" >Правила читай тут</a></p>
+    <div id="roulsText">
+        <span>Популярна головоломка <i>"пятнашка"</i> була придумана ще в кінці 19 століття. Класичне ігрове поле являє собою матрицю 4х4(у нашому випадку це матриця 5х5 та 6х6) клітин, на якому по порядку (зліва - направо і зверху - вниз) розташовуються цифри від 1 до 15(24,35). Остання клітина - порожня. Клітини перемішуються певним чином, і завдання гравця полягає в тому, щоб відновити їх первиннt правильне розташування від 1 до 15(24,35). Робити це можна лише шляхом переміщення на порожню клітину іншої, сусідньої з нею клітини (розташованої ліворуч, праворуч, зверху чи знизу від порожньої).Використовуй ↑, ↓, ←, → на клавіатурі.</span>
+        <form action="">
+	       <input type="button" value="Сховати" onclick="hide()">
+        </form>
+    </div>
+  </div>
+  <div id="box1"></div>
+  <div id="box2"></div>
+     
+	<script src="main.js"></script>
+</body>
+</html>
