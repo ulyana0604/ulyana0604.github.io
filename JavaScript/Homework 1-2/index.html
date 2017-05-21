@@ -17,10 +17,18 @@
     }
     return b;
 }
-var numb = parseInt(prompt('Введіть число'));
-var numbPow =  parseInt(prompt('Введіть степінь'));
-        
-console.log(pow(numb, numbPow));
+
+            var numb = parseInt(prompt('Введіть число'));
+            var numbPow =  parseInt(prompt('Введіть степінь'));
+     
+if((isNaN(numb)) || (isNaN(numbPow))){
+            alert("Неправильно введені дані! Повторіть ще раз")
+              
+        }else {
+            console.log(pow(numb, numbPow));
+        }
+       
+
         
         //------------------------------------------------------------------------------------------
         
