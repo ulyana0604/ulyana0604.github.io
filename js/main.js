@@ -1,3 +1,8 @@
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("article");
+        document.createElement("section");
+
 $(document).ready(function () {
     $("a").on('click', function (event) {
         if (this.hash !== "") {
