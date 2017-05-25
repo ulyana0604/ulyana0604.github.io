@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Francois+One|Libre+Franklin|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Archivo+Narrow|Francois+One|Libre+Franklin|Montserrat');
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
     font-size: 4em;
 }
 
@@ -159,8 +159,8 @@ nav ul li a:hover {
 }
 
 .titleStyle {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3.5em;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 4em;
     text-align: center;
     max-width: 320px;
     width: 100%;
@@ -177,8 +177,8 @@ nav ul li a:hover {
     left: -15px;
     width: 60px;
     height: 60px;
-    border-top: 2px solid rgb(34, 34, 34);
-    border-left: 2px solid rgb(34, 34, 34);
+    border-top: 2px solid rgb(153, 153, 153);
+    border-left: 2px solid rgb(153, 153, 153);
 }
 
 .titleStyle:after {
@@ -188,8 +188,8 @@ nav ul li a:hover {
     right: -25px;
     width: 60px;
     height: 60px;
-    border-bottom: 2px solid rgb(255, 82, 82);
-    border-right: 2px solid rgb(255, 82, 82);
+    border-bottom: 2px solid rgb(196, 111, 138);
+    border-right: 2px solid rgb(196, 111, 138);
 }
 
 #about p:nth-child(2),
@@ -216,12 +216,22 @@ nav ul li a:hover {
     color: rgb(245, 245, 245);
     text-shadow: 0 -1px rgba(0, 0, 0, .1);
     float: left;
+    left: 200px;
     padding: .3em 1em;
     outline: none;
     border: none;
     border-radius: 3px;
-    background: #0c9c0d linear-gradient(#82d18d, #0c9c0d);
-    box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0, 0, 0, .3) 0 2px 5px;
+    background: #d8e0de;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #d8e0de 0%, #aebfbc 22%, #99afab 33%, #8ea6a2 36%, #4e5c5a 56%, #4e5c5a 67%, #4e5c5a 67%, #829d98 67%, #4e5c5a 68%, #4e5c5a 75%, #4e5c5a 83%, #4e5c5a 83%, #0e0e0e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d8e0de 0%, #aebfbc 22%, #99afab 33%, #8ea6a2 36%, #4e5c5a 56%, #4e5c5a 67%, #4e5c5a 67%, #829d98 67%, #4e5c5a 68%, #4e5c5a 75%, #4e5c5a 83%, #4e5c5a 83%, #0e0e0e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d8e0de 0%, #aebfbc 22%, #99afab 33%, #8ea6a2 36%, #4e5c5a 56%, #4e5c5a 67%, #4e5c5a 67%, #829d98 67%, #4e5c5a 68%, #4e5c5a 75%, #4e5c5a 83%, #4e5c5a 83%, #0e0e0e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e', GradientType=0);
+    /* IE6-9 */
+    box-shadow: inset rgb(153, 153, 153) 0 -1px 1px, inset 0 1px 1px rgb(114, 114, 114), rgb(153, 153, 153) 0 0 0 1px, rgba(0, 0, 0, .3) 0 2px 5px;
     -webkit-animation: pulsate 1.2s linear infinite;
     animation: pulsate 1.2s linear infinite;
 }
@@ -340,7 +350,7 @@ nav ul li a:hover {
 }
 
 #works figure {
-    width: 25%;
+    width: 28%;
     height: 300px;
     float: left;
     margin-left: 50px;
@@ -356,10 +366,9 @@ nav ul li a:hover {
 #works figure figcaption {
     position: relative;
     bottom: 20px;
-    color: white;
+    color: color: black;;
     text-align: center;
 }
-
 
 #contact {
     width: 100%;
