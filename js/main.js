@@ -10,11 +10,10 @@ $(document).ready(function () {
             });
         }
     });
-    $(window).scroll(function () {
-        if (document.body.scrollTop >= 580) {
-            $('nav ul li a').attr('id', 'scrollMenuColor');
-        };
-    });
+//    $(window).scroll(function () {
+//        if (document.body.scrollTop >= 580) {
+//            $('nav ul li a').attr('id', 'scrollMenuColor');
+//        };
     $(".spoiler-title").click(function () {
         $(".spoiler-body").slideToggle("slow");
     });
