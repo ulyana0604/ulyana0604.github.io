@@ -9,48 +9,57 @@
     
     <script>
         
-        //завдання 1
-    function pow(a, n) {
-     var b = a;
-        for (var i = 1; i < n; i++) {
-        b *= a;
-    }
-    return b;
+        //№ 1
+ var x = +prompt('Введите число, которое будем возводить в степень');
+var n = +prompt('Введите степень, в которую будем возводить');
+
+
+function pow(base, exponent) {
+  var result = 1;
+
+  for (var i = 0; i < exponent; i++) {
+    result = result * base;
+  }
+
+  return result;
 }
 
-            var numb = parseInt(prompt('Введіть число'));
-            var numbPow =  parseInt(prompt('Введіть степінь'));
-     
-if((isNaN(numb)) || (isNaN(numbPow))){
-            alert("Неправильно введені дані! Повторіть ще раз")
-              
-        }else {
-            console.log(pow(numb, numbPow));
-        }
-       
+
+var powResult = pow(x, n);
+
+console.log(powResult);
 
         
         //------------------------------------------------------------------------------------------
         
-        //завдання 2
-
-        var arrNames = [];
-        for (var i = 0; i < 5; i++){
-            arrNames[i]= prompt('Введіть ім`я  для масиву');
-        }
-        console.log(arrNames);
+        //№ 2
         
-var name = prompt("'Введіть ім`я"),
-    q= 0;
-while (q < arrNames.length) {
-  if (name == arrNames[i]) {
-    alert("Ошибка");
-  } else if(name !== arrNames[i] && q === (arrNames.length-1)){
-    alert( name + " вы успешно вошли! ");
+        var arr = [];
 
-  }
-  q++;
+for (var i = 0; i < 5; i++) {
+  arr[i] = prompt('Введите имя пользователя');
 }
+
+console.log(arr);
+
+var userName = prompt('Введите свое имя');
+var flag = false;
+
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i] === userName){
+    flag = true;
+    break;
+  }
+  console.log(i);
+}
+
+if (flag){
+  alert(userName + ', вы успешно вошли!');
+} else {
+  alert('Такого пользователя не существует!');
+}
+        
+        
 </script>
 </body>
 </html>
