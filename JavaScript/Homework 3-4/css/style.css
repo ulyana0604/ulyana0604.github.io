@@ -1,26 +1,21 @@
-h3 {
-    text-align: center;
+
+h1 {
+	margin: 20px 170px 30px;
+	font-size: 30px;
 }
 
-ul {
-    list-style: square;
-    
+form {
+	padding-left: 50px;
 }
 
-div {
-    width: 300px;
-    margin-left: 150px;
-    margin-top: 50px;
-    font-size: 20px;
+.checkbox {
+    padding-left: 28px;
 }
 
-input[type=button] {
-    background-color: lightblue;
-    width: 200px;
-    height: 40px;
-    border: 1px solid black;
-    position: relative;
-    top: 50px;
-    left: 500px;
-    
+label{
+      display: block;
+    }
+
+.btn-lg {
+	margin: 20px 130px;
 }
