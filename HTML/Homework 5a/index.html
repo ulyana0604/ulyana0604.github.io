@@ -2,54 +2,54 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Bike</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
-	<header>
-	<div class="menu">
-		<p>Meu YouBike</p>
-		<p class="vender">Vender</p>
-		<p>Forum</p>
-		<p>Contanto</p>
-		<p>Ajuda</p>
-	</div>
-	<p>|</p>
-	<div class="enter">
-		<p>Minhas Ofertas</p>
-		<p class="ola">Ola 
-			<a href="#">Entrar</a> 
-		or
-			<a href="#">Codastere-se</a>
-		</p>
-	</div>
-	</header>
-	<div class="content">
-		<div class="container">
-			<div class="cadastre">
-				<h1>Cadastre-se</h1>
+	<div class="wrapper">	
+		<header class="header clearfix">
+			<div class="header__login">
+				<span>Ola!</span>
+				<a href="#">Entar</a>
+				<span>ou</span>
+				<a href="#">Cadastre-se</a>
 			</div>
-			<div class="data">
-				<button>
-				<b>LOG IN</b>
-				 with 
-				<b>FACEBOOK</b>
-				</button>
-				<hr>
-				<form action="" class="regist">
-					<input type="text" placeholder="   First Name">
-					<input type="text" placeholder="   Last name" >
-					<input type="email" placeholder="   Email Address">
-					<input type="password" placeholder="   Choose Password">
-					<input type="password" placeholder="   Password Confirm"><br>
-					<input type="checkbox">
-					<label for="">Send my YouBike updates and tips</label><br>
-					<input type="button" value="Create my account">
-				</form>
-				<p>By clicink the button above, yoi agree to the Terms of Service Xiew our Privaty Police.</p>
+			<div class="header__ofertas">
+				<a href="#"><img src="img/flag.png" alt="flag">Minhas Ofertas</a>
 			</div>
-		</div>
+			<div class="header__menu">
+				<ul>
+					<li><a href="">Meu YouBike</a></li>
+					<li><a href="">Vender</a></li>
+					<li><a href="">Forum</a></li>
+					<li><a href="">Contato</a></li>
+					<li><a href="">Ajuda</a></li>
+				</ul>
+			</div>	
+		</header>
+			<div class="cadastre-form">
+				<div class="title">
+					<h1>Cadastre-se</h1>
+				</div>
+				<div class="login">
+					<a href=""><img src="img/facebook.png" alt=""></a>
+					<div class="formHeader">
+						<p>OU</p>
+					</div>
+					<form action="#">
+								<input type="text" name="first_name" placeholder="First Name">
+								<input type="text" name="last_name" placeholder="Last Name">
+								<input type="email" name="email" placeholder="Email Address">
+								<input type="password" name="password" placeholder="Choose Password">
+								<input type="password" name="password_confirm" placeholder="Password Confirm">
+								<label for="tips_send"><input type="checkbox" id="tips_send">Send me YouBike updates and tips</label>
+								<button type="submit">Create my Account</button>
+					</form>
+					<p>By clicking the button above, you agree to the Terms of Service</p>
+					<p>Xiew our Privacy Policy.</p>
+				</div>
+			</div>
 	</div>
 </body>
 </html>

@@ -3,169 +3,275 @@
 	padding: 0;
 }
 
-
-header {
-	width: 100%;
-	height: 40px;
-	background-color: #085292;
-	padding-left: 40%;
-	font-size: 13.5px;
-	font-family: 'Roboto', sans-serif;
+body, html {
+  height: 100%;
 }
 
-header p {
-	padding-top: 10px;
-	margin-left: 5px;
-	color: #5aaee6;
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.wrapper {
+	background: url(../img/body_bg.jpg) center center no-repeat fixed;
+	height: 100%;
+	min-height: 800px;
+	background-size: cover;
+	position: relative;
+}
+
+span {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: white;
+}
+
+/* HEADER */
+
+.header {
+	background: #074e8c;
+	padding-right: 20px;
+}
+
+.header > * {
+	float: right;
+}
+
+.header__menu {
+	text-align: right;
+}
+
+.header__menu ul {
+	position: relative;
+	line-height:0; 
+	font-size:0; 
+	vertical-align: middle;
+	padding-right: 10px;
+}
+ 
+.header__menu ul li {
 	float: left;
 }
 
-.enter{
-	position: relative;
-	left: 10px;
+.header__menu ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 36px;
+	color: #60b5ed;
+	transition: all 0.25s;
 }
 
-.menu p {
-	height: 30px;
-	width: 90px;
+.header__menu ul li a:hover {
+	background-color: #4eabda;
+	color: white;
+}
+
+.header__menu:after {
+	content: ' ';
+    border-left: 1px solid #56a2dc;
+    height: 30px;
+    position: absolute;
+    top: 4px;
+}
+
+.header__ofertas {
+	color: #fff;
+	padding: 0 15px;
+	width: 128px;
+	text-align: right;
+}
+
+.header__ofertas a {
+	float: right;
+	text-decoration: none;
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	line-height: 36px;
+	transition: all 0.25s;
+}
+
+.header__ofertas img {
+	padding: 0 6px;
+	float: left;
+	position: relative;
+    top: 4px;
+}
+
+.header__ofertas a:hover {
+	color: #60b5ed;
+}
+
+.header__login {
+	width: 189px;
+	color: white;
+	border: 1px solid #459ad4;
+	border-top: none;
 	text-align: center;
+	background: #4eabda;
+background: -moz-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, hsla(200,65%,58%,1)), color-stop(100%, hsla(210,62%,47%,1)));
+background: -webkit-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -o-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -ms-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: linear-gradient(to bottom, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eabda', endColorstr='#2e78c2', GradientType=0 );
 }
 
-.enter a {
-	width: 160px;
-	color: white;
+.header__login a,
+.header__login  span {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-size: 14px;
+	line-height: 34px;
+	color: #fff;
 }
 
-.enter p {
-	margin-left: 10px;
-	height: 30px;
-	
+.header__login a:hover {
+	text-decoration: none;
 }
 
-.vender, .ola {
-	background-color: #307dc6;
-	color: white;
-}
 
-.content {
-	width: 100%;
-	height: 600px;
-	background-image: url(../img/background.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	
-}
+/* CONTENT*/
 
-.container {
-	width: 450px;
-	height: 440px;
-	margin: auto;
-	position: relative;
-	top: 100px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 12.5px;
-	
-}
-
-.cadastre {
-	width: 100%;
-	height: 15%;
+.cadastre-form {
 	text-align: center;
-	background-color: rgba(78, 74, 74, 0.8);
- 	font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    width: 600px;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.cadastre h1 {
+.title, .login {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+	margin-bottom: 2px;
+}
+
+.login {
+	padding: 35px 0 15px;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 24px;
+	line-height: 60px; 
+}
+
+.formHeader {
+	color:#999;
+	padding: 20px 0;
+}
+
+.formHeader p:before,
+.formHeader p:after {
+	content: '';
+	display: inline-block;
+	border-bottom:1px solid black;
+	border-top: 1px solid #666;
 	position: relative;
-	top: 20%;
-	color: white;
+	width: 115px;
+	vertical-align: super;
+	margin: 0 10px;
 }
 
-.data {
-	width: 100%;
-	height: 84%;
-	position: relative;
-	top: 1%;
-	background-color: rgba(78, 74, 74, 0.8);
+.login form {
+	width: 292px;
+    margin: 0 auto;
 }
 
-input[type=text], 
-input[type=password], 
-input[type=email] {
-	width: 50%;
-	height: 25px;
-	position: relative;
-	left: 20%;
-	background-color: #101010;
-	border: none;
-	margin-top: 8px;
-	color: white;
-	top: 15px;
-	font-family: 'Roboto', sans-serif;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font: 14px "Helvetica Neue", Tahoma, sans-serif;
+    line-height: 37px;
+    color:#cccccc;	
+    border: 0px;
+	border-bottom: 1px solid #484848;
+	background-color: #0f0f0f;
+	width: 250px;
+	padding-left: 18px;
+	margin: 7px 0;	
 }
 
-input[type=text]:hover { 
-    background-color: #1b5288;
-	color: white;
-	box-shadow: 1px 1px 4px 2px #5aaee6;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	border: 0px;
+	border-bottom: 1px solid #5680A9;
+	background-color: #1b5288;
+	color: #fffbfb;
+	-webkit-box-shadow: 0px 0px 15px #5791b9;
+	-moz-box-shadow: 0px 0px 15px #5791b9;
+	box-shadow: 0px 0px 15px #5791b9;
 }
 
-input[type=password]:hover { 
-    background-color: #1b5288;
-	color: white;
-	box-shadow: 1px 1px 4px 2px #5aaee6;
+input[type="checkbox"] {
+	width: 25px;
+	margin: 7px 0;
+	padding: 10px 0px;
 }
 
-input[type=email]:hover { 
-    background-color: #1b5288;
-	color: white;
-	box-shadow: 1px 1px 4px 2px #5aaee6;
-}
-
-input[type=checkbox],
 label {
-	position: relative;
-	left: 20%;
-	top:30px;
-	color: white;
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	color: #cccccc;
+	font-size: 14px;
+	line-height: 47px;
 }
 
-input[type=button] {
-	width: 27%;
-	height: 30px;
-	position: relative;
-	top: 50px;
-	left: 35%;
-	background-color: #4aa5d7;
-	border:none;
-	border-radius: 4px;
-	color: white;
-}
-
-.container p {
-	width: 80%;
-	position: relative;
-	top: 65px;
-	left: 8%;
-	text-align: center;
-	color: white;
-}
-
-button {
-	background-color: #3c5595;
-	width: 50%;
-	height: 30px;
-	color: white;
-	border: none;
+button[type="submit"] {
+    width: 155px;
+    margin: 7px 0 17px;
+	padding: 10px 0;
+	border: 0;
+	font: 14px "Helvetica Neue", Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 16px;
+    color: white;
+    cursor: pointer;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
 	border-radius: 3px;
-	position: relative;
-	top: 10px;
-	left: 23%;
-	color: white;
+	background: #4eabda;
+background: -moz-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, hsla(200,65%,58%,1)), color-stop(100%, hsla(210,62%,47%,1)));
+background: -webkit-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -o-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -ms-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: linear-gradient(to bottom, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eabda', endColorstr='#2e78c2', GradientType=0 );
 }
 
-hr {
-	width: 85%;
-	margin: auto;
-	margin-top: 20px;
+p {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	line-height: 18px;
+	font-size: 12px;
+	color: #cccccc;
 }
