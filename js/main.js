@@ -3,7 +3,7 @@
         document.createElement("article");
         document.createElement("section");
 
-$(window).load(function() {
+$(window).ready(function() {
  
   // Fakes the loading setting a timeout
     
