@@ -3,6 +3,15 @@
         document.createElement("article");
         document.createElement("section");
 
+$(window).load(function() {
+ 
+  // Fakes the loading setting a timeout
+    
+        $('body').addClass('loaded');
+   
+ 
+});
+
 $(document).ready(function () {
     $("a").on('click', function (event) {
         if (this.hash !== "") {
